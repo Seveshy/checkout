@@ -1,28 +1,42 @@
+
 <template>
+
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <div class="flex">
+        <Checkout />
+        <Paymant />
+      </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import Checkout from './components/Checkout'
+import Paymant from './components/Paymant'
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    Checkout,
+    Paymant
   }
 }
+
+
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  
+  body {
+    font-family: 'Nunito Sans', sans-serif;
+    background: #E5E5E5;
+    margin: 0;
+    padding: 0;
+    width: 1160px;
+    margin: 0 auto;
+  }
+
+  .flex {
+    display: flex;
+  }
+
 </style>
