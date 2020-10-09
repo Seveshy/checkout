@@ -1,4 +1,4 @@
-# cleissao
+# Checkout
 
 ## Project setup
 ```
