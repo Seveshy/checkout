@@ -2,10 +2,25 @@
 <template>
 
   <div id="app">
+
+      <h1>Checkout</h1>
+
       <div class="flex">
-        <Checkout />
+       <div>
+          <Checkout />
+          <CreditCar />
+          <Boleto />
+          <Paypal />
+       </div>
+
+      <div>
         <Paymant />
       </div>
+
+      </div>
+      
+
+
   </div>
 </template>
 
@@ -13,11 +28,17 @@
 
 import Checkout from './components/Checkout'
 import Paymant from './components/Paymant'
+import CreditCar from './components/CreditCar'
+import Boleto from './components/Boleto'
+import Paypal from './components/Paypal'
 
 export default {
   components: {
     Checkout,
-    Paymant
+    Paymant,
+    CreditCar,
+    Boleto,
+    Paypal
   }
 }
 
@@ -25,11 +46,12 @@ export default {
 </script>
 
 <style>
-  
+  #app {
+    margin-top: 5%;
+  }
   body {
     font-family: 'Nunito Sans', sans-serif;
-    background: #E5E5E5;
-    margin: 0;
+    background: #fff;
     padding: 0;
     width: 1160px;
     margin: 0 auto;

@@ -2,25 +2,14 @@
 
 <div>
 
-    <div class="container">
+    <div class="container-card">
 
-        <span class="info"> Informações pessoais </span>
+            <article>
+                <input type="radio" checked="checked" name="radio">
+                <span class="info"> Cartão de Credito </span>
+            </article>
 
-        <label>Email*</label>
-        <input class="ck-input">
 
-        <label>Name*</label>
-        <input class="ck-input">
-
-    <label>Celular*</label>
-    <div class="ck-container_cel">
-        <input class="ck-cel_ddd">
-
-        <input class="ck-cel_number">
-    </div>
-
-    <label>CPF*</label>
-    <input class="ck-input">
 
     </div>
 </div>
@@ -29,10 +18,10 @@
 </template>
 <style scoped>
 
-    .container {
+    .container-card {
         color: #191D3A;
         width: 624px;
-        height: 500px;
+        height: 76px;
         border-radius: 6px;
         border: 1px solid #D5D8E6;
         box-sizing: border-box;
@@ -40,11 +29,18 @@
         display: flex;
         flex-direction: column; 
         padding: 30px;
+        margin-top: 14px;
     }
 
+   
+
     .info {
+        font-style: normal;
         font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;        
         margin-bottom: 24px;
+        color: #FD6481; 
     }
 
     .ck-input {
@@ -57,6 +53,23 @@
         outline: none;
     }
 
+    select {
+        border-radius: 6px;
+        border: 1px solid #D5D8E6;
+        box-sizing: border-box;
+        padding: 12px;
+        outline: none;
+        background: #fff;
+        color: #191D3A;
+    }
+
+    .ck-radio {
+        width: 16px;
+        height: 16px;
+        background: #FD6481;
+    }
+
+
 
 
     label {
@@ -66,6 +79,7 @@
 
     .ck-container_cel {
         display: flex;
+        margin-top: 14px;
     }
 
     .ck-cel_ddd {
@@ -88,6 +102,8 @@
         margin-left: 12px;
         outline: none;
     }
+
+    
 
 </style>
 <script>
