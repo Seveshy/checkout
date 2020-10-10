@@ -7,20 +7,20 @@
         <span class="info"> Informações pessoais </span>
 
         <label>Email*</label>
-        <input class="ck-input">
+        <input class="ck-input" type="email" required>
 
         <label>Name*</label>
-        <input class="ck-input">
+        <input class="ck-input" type="text" required>
 
     <label>Celular*</label>
     <div class="ck-container_cel">
-        <input class="ck-cel_ddd">
+        <input class="ck-cel_ddd" type="number" required>
 
-        <input class="ck-cel_number">
+        <input class="ck-cel_number" type="number" required>
     </div>
 
     <label>CPF*</label>
-    <input class="ck-input">
+    <input class="ck-input" type="number" required>
 
     </div>
 </div>
