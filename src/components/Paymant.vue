@@ -23,7 +23,7 @@
     </article>
   </div>
 
-    <hr />
+    <hr class="ck-hr" />
 
       <article class="ck-overall">
         <span class="ck-overall_txt"> Total: </span>
@@ -83,7 +83,7 @@ export default {
   .ck-wrapper {
     background-color: #FD6481;
     height: 296px;
-    margin-bottom: 22px;
+    margin-bottom: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,7 +111,7 @@ export default {
   }
 
   span {
-    margin-top: 22px
+    margin-top: 32px
   }
 
   .ck-card_price {
@@ -147,7 +147,7 @@ export default {
     font-weight: bold;
     border: none;
     font-size: 16px;
-    margin-top: 28px;
+    margin-top: 42px;
     outline: none;
     cursor: pointer;
   }
@@ -166,11 +166,15 @@ export default {
     font-size: 14px;
     line-height: 19px;
     text-decoration: none;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
   }
 
   .ck-securety_logo {
     margin: 5px 5px -2px 0px;
+  }
+
+  .ck-hr {
+    margin-top: 15%;
   }
 
 </style>

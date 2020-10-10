@@ -23,12 +23,12 @@
 
     <div class="ck-container_cel">
         <article>
-            <label>Validate*</label>
+            <label class="ck-validate_txt">Validate*</label>
             <input class="ck-cel_ddd">
         </article>
 
         <article>
-            <label>Cod Segurança*</label>
+            <label class="ck-cod_txt">Cod Segurança*</label>
             <input class="ck-cel_number">
         </article>
     
@@ -134,8 +134,15 @@
         border: 1px solid #D5D8E6;
         box-sizing: border-box;
         border-radius: 6px;
-        margin-left: 12px;
         outline: none;
+    }
+
+    .ck-validate_txt {
+        margin-bottom: 12px;
+    }
+
+    .ck-cod_txt {
+        margin-bottom: 12px;
     }
 
     
