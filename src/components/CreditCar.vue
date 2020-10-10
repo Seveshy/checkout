@@ -16,20 +16,20 @@
         </div>
 
          <label>Numero do Cartão*</label>
-        <input class="ck-input">
+        <input class="ck-input" type="number" required>
 
         <label>Nome impresso do cartão*</label>
-        <input class="ck-input">
+        <input class="ck-input" type="text" required>
 
     <div class="ck-container_cel">
         <article>
-            <label>Validate*</label>
-            <input class="ck-cel_ddd">
+            <label class="ck-validate_txt">Validate*</label>
+            <input class="ck-cel_ddd" type="number" required>
         </article>
 
         <article>
-            <label>Cod Segurança*</label>
-            <input class="ck-cel_number">
+            <label class="ck-cod_txt">Cod Segurança*</label>
+            <input class="ck-cel_number" type="number" required>
         </article>
     
     </div>
@@ -47,7 +47,7 @@
 
    
 </template>
-<style scoped>
+<style>
 
     .container-card {
         color: #191D3A;
@@ -134,8 +134,15 @@
         border: 1px solid #D5D8E6;
         box-sizing: border-box;
         border-radius: 6px;
-        margin-left: 12px;
         outline: none;
+    }
+
+    .ck-validate_txt {
+        margin-bottom: 12px;
+    }
+
+    .ck-cod_txt {
+        margin-bottom: 12px;
     }
 
     
