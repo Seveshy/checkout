@@ -18,7 +18,7 @@
     <div class="ck-container_cel">
         <article>
             <label class="ck-validate_txt">CPF*/CNPJ</label>
-            <input class="ck-cpf" type="number" required>
+            <input class="ck-input_paymant" type="number" required>
         </article>
 
         <article class="ck-wrapper_phone">
@@ -47,12 +47,12 @@
     <div class="ck-container_cel">
         <article>
             <label class="ck-validate_txt">Numero</label>
-            <input class="ck-cpf" type="number" required>
+            <input class="ck-input_paymant" type="number" required>
         </article>
 
         <article class="ck-wrapper_phone">
             <label class="ck-cod_txt">Complemento*</label>
-            <input class="ck-cel_ddd" type="text" required>
+            <input class="ck-input_complement" type="text" required>
         </article>
     
     </div>
@@ -63,7 +63,7 @@
     <div class="ck-container_cel">
         <article class="ck-wrapper_city">
             <label class="ck-validate_txt">Cidade</label>
-            <input class="ck-cpf" type="number" required>
+            <input class="ck-input_paymant" type="number" required>
         </article>
 
         <article class="ck-wrapper_state">
@@ -81,33 +81,40 @@
 
     <div class="container-payCard">
 
-  <div class="main">
-    <span class="ck-order"> Order Summary </span>
+  <div class="ck-main_card">
+    <span class="ck-title"> DADOS DE PAGAMENTO </span>
 
-    <div class="ck-card">
+    <label> Numero do Cartão </label>
+    <input class="ck-input_paymant" type="number" required>
+
+    <label> Nome do titular </label>
+    <input class="ck-input_paymant" type="text" required>
     
-    <article class="ck-card-info">
-        <span> Product </span>
-        <span> Paymant </span>
-        <span> Pay with </span>
-    </article>
+    
+    <label> Data de validade </label>
 
-    <article class="ck-card_price">
-      <span> Webinar Control </span>
-      <span> OU EM 12 X DE R$ 17,96* </span>
-      <span> Credit Card </span>      
-    </article>
+   <div class="ck-validate_card">
+        <input class="ck-validate" type="number" required>
 
-  </div>
+        <input class="ck-validate" type="number" required>
+   </div>
 
-    <hr class="ck-hr" />
 
-      <article class="ck-overall">
-        <span class="ck-overall_txt"> Total: </span>
-        <span class="ck-price_txt"> $250.00 </span>
-      </article>
+    <div class="ck-wrapper_code">
+        <label>Código de segurança</label>
+        <input class="ck-input_paymant" type="number" required>
+    </div>
 
-  <button class="ck-btn">Pay Now</button>
+
+    <label class="ck-cod_txt">Estado*</label>
+    <select class="ck-input_state">
+        <option value="price-tree">São Paulo</option>
+        <option value="price-two">Rio de Janeiro</option>
+        <option value="price-one">Minas Gerais</option>
+    </select>     
+
+    
+  <button class="ck-btn">Comprar agora</button>
   <div class="ck-footer">
    
       <a href="#"> 
@@ -126,6 +133,21 @@
    
 </template>
 <style>
+
+    .ck-main_card {
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+        margin: 0 auto;
+    }
+
+    .ck-wrapper_code {
+        margin-top: 20px;
+    }
+
+    .ck-validate_card {
+        display: flex;
+    }
 
     .container-payCard {
         width: 440px;
@@ -224,17 +246,7 @@
     }
 
     .ck-cel_ddd {
-        width: 280px;
-        height: 40px;
-        padding: 12px;
-        border: 1px solid #D5D8E6;
-        box-sizing: border-box;
-        border-radius: 6px;
-        outline: none;
-    }
-
-    .ck-cpf {
-        width: 270px;
+        width: 100%;
         height: 40px;
         padding: 12px;
         border: 1px solid #D5D8E6;
@@ -244,8 +256,42 @@
         margin-top: 12px;
     }
 
+    .ck-input_complement {
+        width: 100%;
+        height: 40px;
+        padding: 12px;
+        border: 1px solid #D5D8E6;
+        box-sizing: border-box;
+        border-radius: 6px;
+        outline: none;
+        margin-top: 12px;
+    } 
+
+    .ck-input_paymant {
+        width: 100%;
+        height: 40px;
+        padding: 12px;
+        border: 1px solid #D5D8E6;
+        box-sizing: border-box;
+        border-radius: 6px;
+        outline: none;
+        margin-top: 12px;
+    }
+
+    .ck-validate {
+        width: 175px;
+        margin: 0 12px 0 0;
+        height: 40px;
+        padding: 12px;
+        border: 1px solid #D5D8E6;
+        box-sizing: border-box;
+        border-radius: 6px;
+        outline: none;
+
+    }
+
     .ck-input_state {
-        width: 270px;
+        width: 100%;
     }
 
     .ck-flex {
