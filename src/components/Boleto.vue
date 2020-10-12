@@ -6,7 +6,7 @@
 
             <article>
                 <input type="radio" checked="checked" name="radio">
-                <span class="info"> Cartão de Credito </span>
+                <span class="info"> Boleto </span>
             </article>
 
     

@@ -4,13 +4,10 @@
 
     <div class="container-card">
 
-            <article>
+            <article style="ck-info_flex">
                 <input type="radio" checked="checked" name="radio">
-                <span class="info"> Cartão de Credito </span>
+                <span class="info"> Paypal </span>
             </article>
-
-
-
     </div>
 </div>
 
@@ -103,13 +100,12 @@
         outline: none;
     }
 
-    
-
 </style>
 <script>
 
 
 export default {
+    
 }
 </script>
 

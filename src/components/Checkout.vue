@@ -27,6 +27,7 @@
 
    
 </template>
+
 <style scoped>
 
     .container {
@@ -92,8 +93,11 @@
 </style>
 <script>
 
+import { TheMask } from 'vue-the-mask'
+
 
 export default {
+    TheMask
 }
 </script>
 

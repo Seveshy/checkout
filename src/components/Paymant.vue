@@ -91,6 +91,7 @@ export default {
     
   }
 
+
   .ck-card {
     display: flex;
     justify-content: space-between;
