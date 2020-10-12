@@ -3,12 +3,17 @@
 
   <div id="app">
 
+
+     <!-- Descomente aqui !-->
+      
+      <!-- 
+      
       <h1>Checkout</h1>
 
-      <div class="flex">
+         <div class="flex">
        <div>
           <Checkout />
-          <CreditCar />
+          <CreditCheckout />
           <Boleto />
           <Paypal />
        </div>
@@ -18,8 +23,10 @@
       </div>
 
       </div>
-      
+        
+      !-->
 
+  <CreditCheckout />
 
   </div>
 </template>
@@ -28,17 +35,19 @@
 
 import Checkout from './components/Checkout'
 import Paymant from './components/Paymant'
-import CreditCar from './components/CreditCar'
+//import CreditCar from './components/CreditCar'
 import Boleto from './components/Boleto'
 import Paypal from './components/Paypal'
+import CreditCheckout from './components/CreditCheckout'
 
 export default {
   components: {
     Checkout,
     Paymant,
-    CreditCar,
+   // CreditCar,
     Boleto,
-    Paypal
+    Paypal,
+    CreditCheckout
   }
 }
 
