@@ -18,12 +18,12 @@
     <div class="ck-container_cel">
         <article>
             <label class="ck-validate_txt">CPF*/CNPJ</label>
-            <input class="ck-input_paymant" type="number" required>
+            <input class="ck-cpf" type="number" required>
         </article>
 
         <article class="ck-wrapper_phone">
             <label class="ck-cod_txt">Celular com DDD*</label>
-            <input class="ck-cel_ddd" type="number" required>
+            <input class="ck-cel_ddd ck-wrapper_comp" type="number" required>
         </article>
     
     </div>
@@ -47,12 +47,12 @@
     <div class="ck-container_cel">
         <article>
             <label class="ck-validate_txt">Numero</label>
-            <input class="ck-input_paymant" type="number" required>
+            <input class="ck-cpf" type="number" required>
         </article>
 
         <article class="ck-wrapper_phone">
             <label class="ck-cod_txt">Complemento*</label>
-            <input class="ck-input_complement" type="text" required>
+            <input class="ck-cel_ddd ck-wrapper_comp" type="text" required>
         </article>
     
     </div>
@@ -63,7 +63,7 @@
     <div class="ck-container_cel">
         <article class="ck-wrapper_city">
             <label class="ck-validate_txt">Cidade</label>
-            <input class="ck-input_paymant" type="number" required>
+            <input class="ck-cpf" type="number" required>
         </article>
 
         <article class="ck-wrapper_state">
@@ -79,75 +79,14 @@
     </div>
     </div>
 
-    <div class="container-payCard">
+  <credit-car></credit-car>
 
-  <div class="ck-main_card">
-    <span class="ck-title"> DADOS DE PAGAMENTO </span>
-
-    <label> Numero do Cartão </label>
-    <input class="ck-input_paymant" type="number" required>
-
-    <label> Nome do titular </label>
-    <input class="ck-input_paymant" type="text" required>
-    
-    
-    <label> Data de validade </label>
-
-   <div class="ck-validate_card">
-        <input class="ck-validate" type="number" required>
-
-        <input class="ck-validate" type="number" required>
-   </div>
-
-
-    <div class="ck-wrapper_code">
-        <label>Código de segurança</label>
-        <input class="ck-input_paymant" type="number" required>
-    </div>
-
-
-    <label class="ck-cod_txt">Estado*</label>
-    <select class="ck-input_state">
-        <option value="price-tree">São Paulo</option>
-        <option value="price-two">Rio de Janeiro</option>
-        <option value="price-one">Minas Gerais</option>
-    </select>     
-
-    
-  <button class="ck-btn">Comprar agora</button>
-  <div class="ck-footer">
-   
-      <a href="#"> 
-        <img  class="ck-securety_logo" alt="Vue logo" src="../assets/secure.png">
-        Secure Payments
-      </a>
-
-    <img alt="Vue logo" src="../assets/footer.png">
-  </div>
-  </div>
-
-    </div>
 
 </div>
 
    
 </template>
 <style>
-
-    .ck-main_card {
-        display: flex;
-        flex-direction: column;
-        width: 360px;
-        margin: 0 auto;
-    }
-
-    .ck-wrapper_code {
-        margin-top: 20px;
-    }
-
-    .ck-validate_card {
-        display: flex;
-    }
 
     .container-payCard {
         width: 440px;
@@ -246,18 +185,17 @@
     }
 
     .ck-cel_ddd {
-        width: 100%;
+        width: 280px;
         height: 40px;
         padding: 12px;
         border: 1px solid #D5D8E6;
         box-sizing: border-box;
         border-radius: 6px;
         outline: none;
-        margin-top: 12px;
     }
 
-    .ck-input_complement {
-        width: 100%;
+    .ck-cpf {
+        width: 270px;
         height: 40px;
         padding: 12px;
         border: 1px solid #D5D8E6;
@@ -265,45 +203,31 @@
         border-radius: 6px;
         outline: none;
         margin-top: 12px;
-    } 
-
-    .ck-input_paymant {
-        width: 100%;
-        height: 40px;
-        padding: 12px;
-        border: 1px solid #D5D8E6;
-        box-sizing: border-box;
-        border-radius: 6px;
-        outline: none;
-        margin-top: 12px;
-    }
-
-    .ck-validate {
-        width: 175px;
-        margin: 0 12px 0 0;
-        height: 40px;
-        padding: 12px;
-        border: 1px solid #D5D8E6;
-        box-sizing: border-box;
-        border-radius: 6px;
-        outline: none;
-
     }
 
     .ck-input_state {
-        width: 100%;
+        width: 270px;
     }
 
     .ck-flex {
         display: flex;
     }
 
+    .ck-wrapper_comp {
+        margin-top: 12px;
+    }
 
 </style>
 <script>
 
-
+import CreditCar from "@/components/CreditCar";
 export default {
+  components: {
+    CreditCar,
+
+
+  }
 }
+
 </script>
 
