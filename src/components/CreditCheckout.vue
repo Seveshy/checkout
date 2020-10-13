@@ -23,7 +23,7 @@
 
         <article class="ck-wrapper_phone">
             <label class="ck-cod_txt">Celular com DDD*</label>
-            <input class="ck-cel_ddd" type="number" required>
+            <input class="ck-cel_ddd ck-wrapper_comp" type="number" required>
         </article>
     
     </div>
@@ -52,7 +52,7 @@
 
         <article class="ck-wrapper_phone">
             <label class="ck-cod_txt">Complemento*</label>
-            <input class="ck-cel_ddd" type="text" required>
+            <input class="ck-cel_ddd ck-wrapper_comp" type="text" required>
         </article>
     
     </div>
@@ -79,47 +79,8 @@
     </div>
     </div>
 
-    <div class="container-payCard">
+  <credit-car></credit-car>
 
-  <div class="main">
-    <span class="ck-order"> Order Summary </span>
-
-    <div class="ck-card">
-    
-    <article class="ck-card-info">
-        <span> Product </span>
-        <span> Paymant </span>
-        <span> Pay with </span>
-    </article>
-
-    <article class="ck-card_price">
-      <span> Webinar Control </span>
-      <span> OU EM 12 X DE R$ 17,96* </span>
-      <span> Credit Card </span>      
-    </article>
-
-  </div>
-
-    <hr class="ck-hr" />
-
-      <article class="ck-overall">
-        <span class="ck-overall_txt"> Total: </span>
-        <span class="ck-price_txt"> $250.00 </span>
-      </article>
-
-  <button class="ck-btn">Pay Now</button>
-  <div class="ck-footer">
-   
-      <a href="#"> 
-        <img  class="ck-securety_logo" alt="Vue logo" src="../assets/secure.png">
-        Secure Payments
-      </a>
-
-    <img alt="Vue logo" src="../assets/footer.png">
-  </div>
-  </div>
-
-    </div>
 
 </div>
 
@@ -252,12 +213,21 @@
         display: flex;
     }
 
+    .ck-wrapper_comp {
+        margin-top: 12px;
+    }
 
 </style>
 <script>
 
-
+import CreditCar from "@/components/CreditCar";
 export default {
+  components: {
+    CreditCar,
+
+
+  }
 }
+
 </script>
 

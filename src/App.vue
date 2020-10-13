@@ -33,20 +33,20 @@
 
 <script>
 
-import Checkout from './components/Checkout'
-import Paymant from './components/Paymant'
+// import Checkout from './components/Checkout'
+// import Paymant from './components/Paymant'
 //import CreditCar from './components/CreditCar'
-import Boleto from './components/Boleto'
-import Paypal from './components/Paypal'
+// import Boleto from './components/Boleto'
+// import Paypal from './components/Paypal'
 import CreditCheckout from './components/CreditCheckout'
 
 export default {
   components: {
-    Checkout,
-    Paymant,
+    // Checkout,
+    // Paymant,
    // CreditCar,
-    Boleto,
-    Paypal,
+   //  Boleto,
+   //  Paypal,
     CreditCheckout
   }
 }
